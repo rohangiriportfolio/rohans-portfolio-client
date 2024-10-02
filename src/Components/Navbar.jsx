@@ -25,7 +25,7 @@ const Navbar = () => {
 
     const getUser = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/login/sucess", { withCredentials: true });
+            const response = await axios.get("https://rohans-portfolio-server.vercel.app/login/sucess", { withCredentials: true });
 
             setUserdata(response.data.user)
         } catch (error) {
@@ -38,7 +38,7 @@ const Navbar = () => {
     let isClicked = false;
 
     const logout = () => {
-        window.open("http://localhost:5000/logout", "_self");
+        window.open("https://rohans-portfolio-server.vercel.app/logout", "_self");
     }
 
     const showLogout = () => {
