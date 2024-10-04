@@ -3,7 +3,7 @@ import './style.css';
 
 const LogInOut = () => {
     const loginwithgoogle = () => {
-        window.open("https://rohans-portfolio-server.vercel.app/auth/google", "_self");
+        window.open("https://rohans-portfolio-server.vercel.app/auth/google/callback", "_self");
     }
     const onMouseOver = () => {
         document.getElementById('LogInGoogle').style.color='#094acd';
