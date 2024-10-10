@@ -25,7 +25,7 @@ const Navbar = () => {
     let r;
     const getUser = async () => {
         try {
-            const response = await axios.get("https://rohans-portfolio-server.vercel.app/login/sucess", { withCredentials: true });
+            const response = await axios.get("https://rohans-portfolio-server.vercel.app/login/success", { withCredentials: true });
             r = response.data;
             setUserdata(response.data.user)
         } catch (error) {
