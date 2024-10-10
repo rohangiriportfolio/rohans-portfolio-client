@@ -29,7 +29,7 @@ const Navbar = () => {
             r = response.data;
             setUserdata(response.data.user)
         } catch (error) {
-            consolie.log(r);
+            console.log(r);
             console.log("error", error);
         }
     }
